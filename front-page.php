@@ -116,12 +116,13 @@
 
         <?php
         $brand_partners = array( 
-          'post_per_page' => 6,
+          'posts_per_page' => 6,
           'category__in'  => array()    
         );
         $brand_partners = new WP_Query ( $brand_partners );  
-        if( $brand_partners-> have_posts()):
-          while( $brand_partners-> have_posts()):
+
+        if( $brand_partners->have_posts()):
+          while( $brand_partners->have_posts()):
             $brand_partners->the_post();
         ?>
           
@@ -136,25 +137,6 @@
           endif;
          
          ?>
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="wp-content/themes/assurer_dev/assets/images/clients/client-2.png" class="img-fluid" alt="">
-          </div>  <!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="wp-content/themes/assurer_dev/assets/images/clients/client-3.png" class="img-fluid" alt="">
-          </div> <!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="wp-content/themes/assurer_dev/assets/images/clients/client-4.png" class="img-fluid" alt="">
-          </div> <!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="wp-content/themes/assurer_dev/assets/images/clients/client-5.png" class="img-fluid" alt="">
-          </div> <!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="wp-content/themes/assurer_dev/assets/images/clients/client-nissan.png" class="img-fluid" alt="">
-          </div> <!-- End Client Item -->
 
         </div>
 
