@@ -516,4 +516,4 @@
 
   </main>
 
-<?php include "footer.php"; ?>
+<?php get_footer(); ?>

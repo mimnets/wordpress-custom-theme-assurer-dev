@@ -6,7 +6,20 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">Express Auto Wash</span>
           </a>
-          <img src="wp-content/themes/assurer_dev/assets/images/logo.png" alt="">
+
+                    <?php 
+            if(function_exists('the_custom_logo')){
+              the_custom_logo();
+              $custom_logo_id = get_theme_mod('custom_logo');
+              $logo = wp_get_attachment_image_src($custom_logo_id);
+
+            }
+          
+          ?>
+
+          <!-- <img src="wp-content/themes/assurer_dev/assets/images/logo.png" alt="">-->
+
+
           <div class="social-links d-flex mt-4">
             <a href="#"><i class="bi bi-twitter-x"></i></a>
             <a href="#"><i class="bi bi-facebook"></i></a>
