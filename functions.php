@@ -7,7 +7,7 @@ function assurerdev_scripts(){
 
 
     wp_enqueue_style('assurer_dev-bootstrap-css', get_template_directory_uri(  ) . '/assets/css/bootstrap/css/bootstrap.min.css' );
-    wp_enqueue_style('assurer_dev-bootstrap-icons-css', get_template_directory_uri(  ) . '/assets/css/bootstrap/css/bootstrap-icons/bootstap-icons.css' );
+    wp_enqueue_style('assurer_dev-bootstrap-icons-css', get_template_directory_uri(  ) . '/assets/css/bootstrap-icons/bootstrap-icons.css' );
     wp_enqueue_style('assurer_dev-bootstrap-aos-css', get_template_directory_uri(  ) . '/assets/css/aos/aos.css' );
     wp_enqueue_style('assurer_dev-bootstrap-glighbox-css', get_template_directory_uri(  ) . '/assets/css/glightbox/css/glightbox.min.css' );
     wp_enqueue_style('assurer_dev-bootstrap-swiper-css', get_template_directory_uri(  ) . '/assets/css/swiper/swiper-bundle.min.css' );
