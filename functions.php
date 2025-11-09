@@ -36,7 +36,15 @@ register_nav_menus(
     )
     );
 
-add_theme_support('post-thumbnails')
+
+function assurerdev_them_support(){
+
+add_theme_support('post-thumbnails');
+add_theme_support('custom-logo');
+
+}
+
+add_action( 'after_setup_theme','assurerdev_them_support' );
 
 ?> 
 
