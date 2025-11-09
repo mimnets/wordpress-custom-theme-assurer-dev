@@ -36,7 +36,19 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-         <img src="wp-content/themes/assurer_dev/assets/images/logo.png" alt="">
+
+        <?php 
+          if(function_exists('the_custom_logo')){
+            the_custom_logo();
+            $custom_logo_id = get_theme_mod('custom_logo');
+            $logo = wp_get_attatchment_image_src($custom_logo_id);
+            
+          }
+        
+        ?>
+
+
+         <!-- <img src="wp-content/themes/assurer_dev/assets/images/logo.png" alt=""> -->
         <!--<h1 class="sitename">Business Logo</h1>-->
       </a>
 

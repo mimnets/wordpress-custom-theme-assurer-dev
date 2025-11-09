@@ -1,4 +1,6 @@
-<?php include "header.php"; ?>
+
+<?php get_header(); ?>
+
 
   <main class="main">
 
