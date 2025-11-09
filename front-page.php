@@ -113,11 +113,29 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
+
+        <?php
+        $brand_partners = array( 
+          'post_per_page' => 6,
+          'category__in'  => array()    
+        );
+        $brand_partners = new WP_Query ( $brand_partners );  
+        if( $brand_partners-> have_posts()):
+          while( $brand_partners-> have_posts()):
+            $brand_partners->the_post();
+        ?>
           
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="wp-content/themes/assurer_dev/assets/images/clients/client-1.png" class="img-fluid" alt="">
+            <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid" alt="">
           </div>  <!-- End Client Item -->
-
+            
+         <?php
+         endwhile;
+        else:
+          echo 'No posts to display';
+          endif;
+         
+         ?>
           <div class="col-xl-2 col-md-3 col-6 client-logo">
             <img src="wp-content/themes/assurer_dev/assets/images/clients/client-2.png" class="img-fluid" alt="">
           </div>  <!-- End Client Item -->
