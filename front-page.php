@@ -92,14 +92,18 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-            <img src="wp-content/themes/assurer_dev/assets/images/about.jpg" class="img-fluid" alt="">
+            <!--<img src="wp-content/themes/assurer_dev/assets/images/about.jpg" class="img-fluid" alt="">-->
+        <?php    
+        if( is_active_sidebar('promotion-image') );
+          dynamic_sidebar('promotion-image'); 
+        ?>
 
           </div>
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>FREE HOTDOG WITH FULL SERVICE CAR WASH</h3>
-            <p class="fst-italic">
-            Promotion Valid until 25 May 2025. Pre Book online or come through anytime for a Full Service Car Wash and you will get an awesome Hotdog at no cost that you can enjoy while you wait for your car to get Cleaned and Shined!
-            </p>
+        <?php    
+        if( is_active_sidebar('promotion-text') );
+          dynamic_sidebar('promotion-text'); 
+        ?>
 
           </div>
         </div>

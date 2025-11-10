@@ -84,8 +84,17 @@ function assurerdev_sidebars(){
     );
             register_sidebar(
         array(
-        'name'          => 'sabbir-intro',
-        'id'            => 'sabbir-intro',
+        'name'          => 'Promotion Image',
+        'id'            => 'promotion-image',
+        'description'   => 'Widgets added here will appear in my custom sidebar.',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget'  => '</div>',
+        )
+    );
+                register_sidebar(
+        array(
+        'name'          => 'Promotion Text',
+        'id'            => 'promotion-text',
         'description'   => 'Widgets added here will appear in my custom sidebar.',
         'before_widget' => '<div class="widget-wrapper">',
         'after_widget'  => '</div>',
