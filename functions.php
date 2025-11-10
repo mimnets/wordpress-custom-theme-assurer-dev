@@ -73,6 +73,24 @@ function assurerdev_sidebars(){
         'after_widget'  => '</div>',
         )
     );
+        register_sidebar(
+        array(
+        'name'          => 'About Us Left Column',
+        'id'            => 'about-us-left-column',
+        'description'   => 'Widgets added here will appear in my custom sidebar.',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget'  => '</div>',
+        )
+    );
+            register_sidebar(
+        array(
+        'name'          => 'sabbir-intro',
+        'id'            => 'sabbir-intro',
+        'description'   => 'Widgets added here will appear in my custom sidebar.',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget'  => '</div>',
+        )
+    );
 }
 
 add_action( 'widgets_init','assurerdev_sidebars' );

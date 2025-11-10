@@ -19,7 +19,6 @@
         <?php
         if( is_active_sidebar('about-intro') );
           dynamic_sidebar('about-intro'); 
-        
         ?>
       </div><!-- End Section Title -->
 
@@ -28,14 +27,11 @@
         <div class="row gy-4">
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-            We pride ourselves in amazing car washes and ensure only the best of quality in car care!
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>We will give you the best price in town plus the best quality clean that your car deserves.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>We import our car wax products from the USA.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Our team has over 10 years of experience in the industry.</span></li>
-            </ul>
+        <?php
+        if( is_active_sidebar('about-us-left-column') );
+          dynamic_sidebar('about-us-left-column'); 
+        ?>
+
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
