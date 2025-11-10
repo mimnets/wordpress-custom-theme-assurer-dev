@@ -91,10 +91,19 @@ function assurerdev_sidebars(){
         'after_widget'  => '</div>',
         )
     );
-                register_sidebar(
+        register_sidebar(
         array(
         'name'          => 'Promotion Text',
         'id'            => 'promotion-text',
+        'description'   => 'Widgets added here will appear in my custom sidebar.',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget'  => '</div>',
+        )
+    );
+        register_sidebar(
+        array(
+        'name'          => 'Price table one',
+        'id'            => 'price-table-one',
         'description'   => 'Widgets added here will appear in my custom sidebar.',
         'before_widget' => '<div class="widget-wrapper">',
         'after_widget'  => '</div>',

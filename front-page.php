@@ -386,15 +386,11 @@
 
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-item">
-              <h3>Express - Wash & Go</h3>
-              <h4><sup>$</sup>3.60</h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>XTRACT JET SHAMPOO</span></li>
-                <li><i class="bi bi-check"></i> <span>SOFT TOUCH AUTO WASH</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>VALET SERVICES ON REQUEST</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span> SUPER WAX</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span> POWER MACHINE DRY</span></li>
-              </ul>
+        <?php
+            if( is_active_sidebar('price-table-one') );
+          dynamic_sidebar('price-table-one'); 
+        ?>
+
               <div class="text-center"><a href="#contact" class="buy-btn">Book Now</a></div>
             </div>
           </div><!-- End Pricing Item -->
