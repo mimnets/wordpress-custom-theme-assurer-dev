@@ -62,6 +62,23 @@ function assurerdev_custom_logo_setup(){
 
 add_action( 'after_setup_theme','assurerdev_custom_logo_setup');
 
+
+function assurerdev_sidebars(){
+    register_sidebar(
+        array(
+        'name'          => 'about-intro',
+        'id'            => 'about-intro',
+        'description'   => 'Widgets added here will appear in my custom sidebar.',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget'  => '</div>',
+        )
+    );
+}
+
+add_action( 'widgets_init','assurerdev_sidebars' );
+
+
+
 ?> 
 
   

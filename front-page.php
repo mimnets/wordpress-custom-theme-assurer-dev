@@ -16,8 +16,11 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us<br></h2>
-        <p>Express Auto Wash was established in 2010. We opened our doors when the FIFA 2010 Soccer World Cup came to South Africa and we have been in Business ever since.</p>
+        <?php
+        if( is_active_sidebar('about-intro') );
+          dynamic_sidebar('about-intro'); 
+        
+        ?>
       </div><!-- End Section Title -->
 
       <div class="container">
